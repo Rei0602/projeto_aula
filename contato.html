@@ -1,0 +1,160 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="uft-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<title>Contato</title>
+		<script>
+			function clicar()
+			{
+				alert('Enviado com sucesso')
+			}
+
+						var nome = "Rian";
+						var ano = "Ano - 2021<br>";
+						var twitter = "Twitter: @RianMack<br>";
+						var linkedin = "LinkedIn: Rian Sousa<br>";
+						var instagram = "Instagram: user_2101rian<br>";
+						var sexo = "Sexo: Masculino<br>";
+						var polo = "Localização - polo: Higienópolis";
+		</script>
+</head>
+	<body>
+		<style>
+			body{
+				background:	#A9A9A9;
+			}
+			.titulo{
+				text-align: center;
+			}
+			.subtitulos{
+				text-align: center;
+				font-size: 20px;
+			}
+			table{
+				display: grid;
+				place-items: center;
+			}
+			tr, td{
+				border: 2px solid blue;
+			}
+			.central{
+				text-align: center;
+				font-weight: bold;
+			}
+			button{
+				background-color: #808080;
+				border-radius: 4px;
+				height: 50px;
+				width: 100%;
+			}
+			</style>
+			<header>
+				<h1 class="titulo">NEWSLETTER</h1>
+				<a href="home.html">Home</a>
+			</header>
+
+			<p class="subtitulos">Gostaria de receber notícias sobre tecnologia?</p>
+
+		<div>
+			<table class="campo">	
+				<form name="cadastro" method="POST">
+				<tr>
+					<td colspan="2" class="central">
+						<h4>Preencha as informações abaixo</h4>
+					</td>
+				</tr>
+
+					<tr>
+						<td class="principais"><label><strong>Nome:</strong></label></td>
+						<td><input type="text" maxlength="20" placeholder="Nome" required></td>
+					</tr>
+
+					<tr>
+						<td class="principais"><label>Sobrenome:&nbsp;</label></td>
+						<td><input type="text" maxlength="35" placeholder="Sobrenome" required></td>
+					</tr>
+
+					<tr>
+						<td class="principais"><label>E-mail:</label></td>
+						<td><input type="email" maxlength="60" placeholder="example123@gmail.com" required></td>
+					</tr>
+
+		<!--linguagens-->
+					<tr>
+						<td colspan="2">
+							<p class="central">Você tem conhecimento em alguma linguagem?</p>
+							<input type="checkbox">HTML <br>
+							<input type="checkbox">CSS <br>
+							<input type="checkbox">JavaScript <br>
+							<input type="checkbox">PHP <br>
+							<input type="checkbox">Python <br>
+							<input type="checkbox">Java <br>
+							<input type="checkbox">Outras <br>
+						</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">
+							<p class="central">Em qual área você atua?</p>
+							<input type="radio">Front-End <br>
+							<input type="radio">Back-End <br>
+							<input type="radio">Full-Stack
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p class="central">Deixe um comentário:</p>
+							<textarea rows="8" cols="50" style='width: 99%;'></textarea>
+						</td>	
+					</tr>
+
+					<tr>
+						<td colspan="2" align="center">
+							<button type="submit" onclick="clicar()">Enviar</button>
+						</td>
+					</tr>	
+						</table>
+				</form>	
+		</div>
+		<footer class="rodape">
+			<ul>
+				<li>
+					<script>
+							document.write("<p>" + nome + "</p>");	
+					</script>
+				</li>
+				<li>
+					<script>
+						document.write("<p>" + ano + "</p>");
+					</script>
+				</li>
+				<li>
+					<script>
+						document.write("<p>" + twitter + "</p>");
+					</script>
+				</li>
+				<li>
+					<script>
+						document.write("<p>" + linkedin + "</p>");
+					</script>
+				</li>
+				<li>
+					<script>
+						document.write("<p>" + instagram + "</p>");
+					</script>
+				</li>
+				<li>
+					<script>
+						document.write("<p>" + sexo + "</p>");
+					</script>
+				</li>
+				<li>
+					<script>
+						document.write("<p>" + polo + "</p>");
+					</script>
+				</li>
+			</ul>
+		</footer>	
+	</body>
+</html>

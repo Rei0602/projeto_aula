@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Página Inicial</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
+	<body class="fundo">
+		<style>
+			img{
+				position: relative;
+				left: 10%;
+				width: 80%;}
+
+			#criador{
+				background: blue;
+				border-radius: 4px;
+				text-align: center;
+				color: white;}
+			
+			.formatacao ul{
+				list-style-type: none;
+				padding: 0px;
+			}
+
+			.formatacao ul li{
+				text-align: center;
+			}
+
+				
+			@media screen and (max-width: 480px){
+
+				#fontes, .formatacao, .contato, #criador {
+				text-align: center;
+				padding: 7px;
+				border-radius: 15px;}
+
+				#fontes a, .contato a{
+				text-decoration: none;
+				font-weight: bold;} 
+			
+					
+				}
+		</style>
+
+			<script>
+						var nome = "Rian";
+						var ano = "Ano - 2021<br>";
+						var twitter = "Twitter: @RianMack<br>";
+						var linkedin = "LinkedIn: Rian Sousa<br>";
+						var instagram = "Instagram: user_2101rian<br>";
+						var sexo = "Sexo: Masculino<br>";
+						var polo = "Localização - polo: Higienópolis";
+			</script>
+		<header>
+			<h1>Machine Learning</h1> 
+		</header>
+		<section>
+			<hr>
+			<nav class="formatacao">
+				<a href="datascience.html">Conheça também Data Science</a>
+			</nav>
+
+			<b><h3 class="machine"> O que é o Machine Learning?</h3></b>
+			<p class="blocotexto"><i> Machine Learning é uma tecnologia onde os computadores tem a capacidade de aprender de acordo com as respostas esperadas por meio associações de diferentes dados, os quais podem ser imagens, números e tudo que essa tecnologia possa identificar. <br> <b>Machine Learning é o termo em inglês para a tecnologia conhecida no Brasil como aprendizado de máquina.</b> </i></p>
+			<img src="imagens\ideias.jpg">
+
+		<article>	
+			<h3 class="machine">Algoritmos do Machine Learning</h3>
+		
+			<p class="blocotexto">Quando se desenvolve um sistema de aprendizado de máquina, a estrutura utilizada na programação é diferente da programação de software tradicional. No  método tradicional se cria um conjunto de regras para gerar uma resposta a partir do processamento dos dados introduzidos.<br>
+
+			Já os algoritimos de Machine Learning são criados a partir dos dados que serão análisados e as as repostas (ou resultados) que se esperam dessa análise, no final do processo o sistema cria as próprias regras ou perguntas.</p>
+			
+			<p><h3 class="machine">Como Big Data e Machine Learning se associam?</h3></p>
+
+			<p class="blocotexto">Para trabalhar com o sistema de aprendizado de máquina é necessário utilizar um certo conjunto de dados.<br></p>
+			<p class="blocotexto">O Big Data permite que os dados sejam virtualizados para que possam ser armazenados da maneira mais eficiente e econômica, seja on premises ou na cloud. Além da eficiência o Big Data também auxilia na melhoria da velocidade e confiabilidade da rede, removendo outras limitações físicas associadas ao gerenciamento de dados em grande quantidade.<br></p>
+			<p class="blocotexto">Apesar das vantagens oferecidas no processo, uma empresa não necessita ter Big Data para trabalhar com Machine Learning.</p>
+		</article>
+			<p><h3 class="machine">Carreiras em Machine Learning</h3></p>
+			<ul class="carreiras">
+				<li>Deep Learning</li>
+				<li>Aplicações e mercado</li>
+				<li>Cientista de Dados</li>
+				<li>Analista</li>	
+			</ul>
+
+			<p class="formatacao">Veja abaixo um vídeo do canal Nerdologia sobre o assunto</p>
+					<video width="100%" height="100%" controls>
+						<source src="video\learning.mp4" type="video/mp4">
+					</video>
+			<p class="formatacao">Fontes abaixo:</p>
+			<nav id="fontes">
+				<a href="https://www.ibm.com/br-pt/analytics/machine-learning">IBM</a><br>
+				<a href="https://tecnoblog.net/247820/machine-learning-ia-o-que-e/">Tecnoblog</a><br>
+			</nav>
+		
+			<footer>
+						<p class="formatacao"><b>Fale conosco:<b></p>
+					<nav class="contato">		
+						<a href="contato.html">Contato</a>
+					</nav>
+						<p id="criador">Desenvolvido por: Rian Sousa</p>
+						<ul class="rodape">
+							<li>
+								<script>
+										document.write("<p>" + nome + "</p>");	
+								</script>
+							</li>
+							<li>
+								<script>
+									document.write("<p>" + ano + "</p>");
+								</script>
+							</li>
+							<li>
+								<script>
+									document.write("<p>" + twitter + "</p>");
+								</script>
+							</li>
+							<li>
+								<script>
+									document.write("<p>" + linkedin + "</p>");
+								</script>
+							</li>
+							<li>
+								<script>
+									document.write("<p>" + instagram + "</p>");
+								</script>
+							</li>
+							<li>
+								<script>
+									document.write("<p>" + sexo + "</p>");
+								</script>
+							</li>
+							<li>
+								<script>
+									document.write("<p>" + polo + "</p>");
+								</script>
+							</li>
+						</ul>
+						<script>
+
+							
+							function mensagem(msg){
+								if(msg >= 0 && msg < 12){
+									mensagem = 'Bom dia';
+								}else if(msg > 12 && msg < 18){
+									mensagem = 'Boa tarde';
+								}else{
+									mensagem = 'Boa noite';
+								}
+
+								return mensagem;
+							}
+							var data = new Date();
+							var oDia = data.getDay();
+							var msg = data.getHours();
+
+							var dias = ['Domingo', 'Segunda-feira', 'Terça-feira', 
+							'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado']
+							var dIa = dias[oDia];
+
+							
+							
+							var nome = 'Rian';
+							var universidade = 'Universidade Presbiteriana Mackenzie';
+							var curso = 'ADS';
+							var cidade = 'SP';
+							
+
+							alert('Sou o ' + nome + '\n' + cidade + '/' + curso + '-' + universidade + '\n' + mensagem(msg) + ', hoje é ' + dIa); 
+
+
+
+						</script>
+			</footer>
+		</section>
+	</body>
+</html>
